@@ -38,8 +38,9 @@ namespace OnBoardingApp
                 Console.WriteLine($"Your response was {response}");
                 Console.WriteLine($"The bool variable isOwner = {isOwner}");
             }
-            
-            Console.WriteLine("\n\n\n This is the end of the app! press any key to exit!");
+            else
+                Console.WriteLine("Invalid Response");
+            Console.WriteLine("\n\n\n This is the end of the app! Please press any key to exit...");
             Console.ReadLine();
          
 
