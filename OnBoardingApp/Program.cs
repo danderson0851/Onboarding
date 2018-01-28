@@ -10,6 +10,15 @@ namespace OnBoardingApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("What is your name?");
+            var userName = Console.ReadLine();
+            Console.WriteLine($"Awesome, nice to meet you {userName}");
+
+
+
+            Console.ReadLine();
+         
+
         }
     }
 }
