@@ -9,7 +9,6 @@ namespace OnBoardingApp
     class User
     {
 
-
-
+        
     }
 }
