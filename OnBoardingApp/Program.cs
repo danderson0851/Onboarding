@@ -39,7 +39,23 @@ namespace OnBoardingApp
                 Console.WriteLine($"The bool variable isOwner = {isOwner}");
             }
             else
-                Console.WriteLine("Invalid Response");
+                Console.WriteLine("Invalid Response.");
+
+            if (isOwner == true)
+            {
+                Console.WriteLine($"Okay, Mr/Ms account owner (aka) {firstName} {lastName}, if that is your real name...");
+                Console.WriteLine($"\n What might your pin number be???");
+                Console.WriteLine("** DISCLAIMER ** This is not a request for your actual pin, merely program input");
+                var pin = "";
+
+                pin = Console.ReadLine();
+                Console.WriteLine($"Your answer ({pin}) has been assigned to a variable called pin");
+
+                
+            }
+
+
+
             Console.WriteLine("\n\n\n This is the end of the app! Please press any key to exit...");
             Console.ReadLine();
          
