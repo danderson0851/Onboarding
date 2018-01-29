@@ -26,6 +26,7 @@ namespace OnBoardingApp
 
             var response = Console.ReadLine();
 
+
             if (response == "y")
             {
                 isOwner = true;
@@ -37,6 +38,7 @@ namespace OnBoardingApp
                 isOwner = false;
                 Console.WriteLine($"Your response was {response}");
                 Console.WriteLine($"The bool variable isOwner = {isOwner}");
+                Console.WriteLine($"\nIt seems you are not the account owner, Mr or Ms {lastName}, so we're done here. Good day to you");
             }
             else
                 Console.WriteLine("Invalid Response.");
@@ -50,7 +52,7 @@ namespace OnBoardingApp
 
                 pin = Console.ReadLine();
                 Console.WriteLine($"Your answer ({pin}) has been assigned to a variable called pin");
-
+                //TODO: Create loop to handle non numerical input from pin
                 
             }
 
