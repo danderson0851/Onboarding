@@ -1,30 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OnBoardingApp
+﻿namespace OnBoardingApp
 {
     public class User
     {
-        /*
-        public string usernameFirst 
-        {
-            get {return Console.ReadLine();}
-        }  
-        
-        public string usernameLast { get;}
-        public string usernameFull => string.Join(" ", usernameFirst, usernameLast);
-        public int pinNumer
-        */
-        
-        
-        
-        /*
-        public class GetFirstName { get;}
-        var usernameFirst = Console.ReadLine();
-        return usernameFirst;
-        */
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName => string.Join(" ", FirstName, LastName);
+        public int PinNumer { get; set; }
     }
 }

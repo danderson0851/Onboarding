@@ -41,17 +41,20 @@ namespace OnBoardingApp
                 Console.WriteLine($"\nIt seems you are not the account owner, Mr or Ms {lastName}, so we're done here. Good day to you");
             }
             else
-                Console.WriteLine("Invalid Response.");
+                Console.WriteLine("Invalid Response. Get out of here with that nonsense!");
 
             if (isOwner == true)
             {
-                Console.WriteLine($"Okay, Mr/Ms account owner (aka) {firstName} {lastName}, if that is your real name...");
+                Console.WriteLine($"Okay, Mr/Ms account owner (aka  {firstName} {lastName}, if that is your real name...)");
                 Console.WriteLine($"\n What might your pin number be???");
                 Console.WriteLine("** DISCLAIMER ** This is not a request for your actual pin, merely program input");
                 var pin = "";
 
                 pin = Console.ReadLine();
+                
+                
                 Console.WriteLine($"Your answer ({pin}) has been assigned to a variable called pin");
+                
                 //TODO: Create loop to handle non numerical input from pin
                 
             }
