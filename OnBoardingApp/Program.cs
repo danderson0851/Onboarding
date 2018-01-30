@@ -1,4 +1,6 @@
 ﻿using System;
+
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,8 @@ namespace OnBoardingApp
             Console.WriteLine($"\nSweet! It's nice to meet you, {person.FirstName} {person.LastName}.");
             Console.WriteLine("\nYour last name has also been stored in a variable.");
 
-            bool isOwner = false;
+            //bool isOwner = false;
             Console.WriteLine($"\n{person.FirstName}, are you the account owner? | y/n");
-            
 
             Console.WriteLine("(we are going to give value to a boolean variable named 'isOwner' based on your response)");
 
@@ -31,31 +32,30 @@ namespace OnBoardingApp
 
             if (response == "y")
             {
-                isOwner = true;
+                person.IsOwner = true;
                 Console.WriteLine($"Your response was {response}");
-                Console.WriteLine($"The bool variable isOwner = {isOwner}");
+                Console.WriteLine($"The bool variable isOwner = {person.IsOwner}");
             }
             else if (response == "n")
             {
-                isOwner = false;
+                person.IsOwner = false;
                 Console.WriteLine($"Your response was {response}");
-                Console.WriteLine($"The bool variable isOwner = {isOwner}");
+                Console.WriteLine($"The bool variable isOwner = {person.IsOwner}");
                 Console.WriteLine($"\nIt seems you are not the account owner, Mr or Ms {person.LastName}, so we're done here. Good day to you");
             }
             else
                 Console.WriteLine("Invalid Response. Get out of here with that nonsense!");
 
-            if (isOwner == true)
+            if (person.IsOwner == true)
             {
                 Console.WriteLine($"Okay, Mr/Ms account owner (aka  {person.FirstName} {person.LastName}, if that is your real name...)");
                 Console.WriteLine($"\n What might your pin number be???");
                 Console.WriteLine("** DISCLAIMER ** This is not a request for your actual pin, merely program input");
-                var pin = "";
-
-                pin = Console.ReadLine();
+                
+                person.PinNumer = Console.ReadLine();
                 
                 
-                Console.WriteLine($"Your answer ({pin}) has been assigned to a variable called pin");
+                Console.WriteLine($"Your answer ({person.PinNumer}) has been assigned to a variable called pin");
                 
                 //TODO: Create loop to handle non numerical input from pin
                 
